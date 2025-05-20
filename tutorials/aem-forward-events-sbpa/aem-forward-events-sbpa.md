@@ -8,9 +8,9 @@ tags: [ tutorial>intermediate, software-product>sap-build, software-product>sap-
 primary_tag: software-product>sap-build
 ---
 
-# Forward Events to SAP Build Process Automation
+# Forward events from SAP Integration Suite, advanced event mesh to SAP Build Process Automation
 
-<!-- description -->Learn how we can configure forwarding events to a particular SAP Build Process Automation tenant, so that we can later create processes that can be triggered by those events.
+<!-- description -->Learn how we can configure forwarding events from SAP Integration Suite, advanced event mesh to SAP Build Process Automation tenant, so that we can later create processes that can be triggered by those events.
 
 
 ## Prerequisites
