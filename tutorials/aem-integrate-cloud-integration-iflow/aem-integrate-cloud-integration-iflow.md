@@ -82,17 +82,17 @@ Now the AEM adapter is in the tenant and you can see that there is a new integra
 
 > You will be able to see the deployed content in `Monitor` > `Integrations and APIs` >  `Manage Integration Content` > `All`.
 
-#### Import the integration flow
+#### Import the integration package
 
-Now we will go ahead and import the sample integration flow available in [here](./assets/aem-iflow-sample.zip).
+Now we will go ahead and import the sample integration package available [here](./assets/aem-iflow-sample.zip).
 
-> Ensure that you've downloaded the `aem-iflow-sample.zip` file from the assets folder in the GitHub repository. The integration flow is available here: [https://github.com/sap-tutorials/eda/blob/main/tutorials/aem-integrate-cloud-integration-iflow/assets/aem-iflow-sample.zip](https://github.com/sap-tutorials/eda/blob/main/tutorials/aem-integrate-cloud-integration-iflow/assets/aem-iflow-sample.zip).
+> Ensure that you've downloaded the `aem-iflow-sample.zip` file from the assets folder in the GitHub repository. The integration package is available here: [https://github.com/sap-tutorials/eda/blob/main/tutorials/aem-integrate-cloud-integration-iflow/assets/aem-iflow-sample.zip](https://github.com/sap-tutorials/eda/blob/main/tutorials/aem-integrate-cloud-integration-iflow/assets/aem-iflow-sample.zip).
 
 👉 Go to your SAP Integration Suite instance and navigate to `Design` > `Integrations and APIs` and click the **Import** button in the top right hand corner, select the `aem-iflow-sample.zip` file and click the Open button.
 
 ![Import integration package file](assets/import-integration-package.png)
 
-Once imported, you will see the integration flow in the `Artifacts` tab of the integration package. 
+Once imported, you will see the `Consume_Publish_Events_AEM` integration flow, in the `Artifacts` tab, of the `AEM iFlow Sample` integration package. 
 
 ### Get familiar with the AEM adapter and the integration flow
 
@@ -105,7 +105,7 @@ As stated at the beginning, the integration flow is very simple, it consumes the
 > - Which is the Transport Protocol used by the adapters?
 > - Which is the Message Protocol used by the adapters?
 
-Now that you are familiar with the integration flow, let's configure it.
+Now that you are familiar with the `Consume_Publish_Events_AEM` integration flow, let's configure it.
 
 ### Configure the Integration Flow
 
