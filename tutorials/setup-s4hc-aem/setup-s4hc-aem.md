@@ -23,7 +23,7 @@ primary_tag: software-product>sap-integration-suite
 
 
 ## Intro
-Now that we are familiar with the SAP Integration Suite, advanced event mesh, we can proceed to configure the connectivity between SAP S/4HANA Cloud and AEM. For this, we will be interacting with both systems. In AEM we will import certificates and set up  a client username for our SAP S/4HANA Cloud system. In SAP S/4HANA Cloud, we will configure a couple of communication arrangements which will set up the communication channel used to send and receive events from AEM.
+Now that we are familiar with the SAP Integration Suite, advanced event mesh, we can proceed to configure the connectivity between SAP S/4HANA Cloud and AEM. For this, we will be interacting with both systems. In AEM we will import certificates and set up  a client username for our SAP S/4HANA Cloud system, which  needs to match the common name (CN) of the client certificate imported in AEM. In SAP S/4HANA Cloud, we will configure a couple of communication arrangements which will set up the communication channel used to send and receive events from AEM.
 
 
 ### Maintain Client Certificates in SAP S/4HANA Cloud
@@ -54,7 +54,8 @@ In AEM, we will import the client certificate we downloaded from SAP S/4HANA Clo
 
 We now need to create a client username in AEM which will be used by SAP S/4HANA Cloud to authenticate with AEM.
 
-1. Create a new client username: In the broker manager of the event broker service that we are configuring, navigate to the **Access Control** section. Select the **Client Usernames** tab and click on the **+ Client Username** button. A pop-up will open. Enter a name for the client username, e.g. `my1234.s4hana.ondemand.com` and click the **Create button**
+1. Create a new client username: In the broker manager of the event broker service that we are configuring, navigate to the **Access Control** section. Select the **Client Usernames** tab and click on the **+ Client Username** button. A pop-up will open. Enter a name for the client username, e.g. `my123456.s4hana.ondemand.com` and click the **Create button**. The client username needs to match the common name (CN) of the client certificate imported in AEM.
+
    ![Add Client Username](assets/access-control-client-usernames.png)
 
 2. Enable the newly created client username: In the **Edit Client Username settings**, ensure to toggle the **Enable** switch and click the **Apply** button.
