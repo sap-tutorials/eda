@@ -57,7 +57,7 @@ Let's group these events by SAP application and get familiar with the events pro
 
 ### Notification and data events
 
-The two most common types of events that we will normally interact with are known as notification events and data events. They mainly differ in the amount of information included in the payload. Let's explore this further.
+The two most common types of events that you will normally interact with are known as notification events and data events. They mainly differ in the amount of information included in the payload. Let's explore this further.
 
 #### Notification events
 
@@ -68,7 +68,7 @@ As an example, let's use the [Marketing Campaign Events](https://hub.sap.com/eve
 ![Exploring notification event](explore3a.png)
 
 
-We can see that there is an operation available, `ce/sap/s4/beh/marketingcampaign/v1/MarketingCampaign/Completed/v1`, and within it we can find the headers and payload of the event. This event is an example of a notification event.
+You can see that there is an operation available, `ce/sap/s4/beh/marketingcampaign/v1/MarketingCampaign/Completed/v1`, and within it you can find the headers and payload of the event. This event is an example of a notification event.
 
 ```JSON
 {
@@ -85,14 +85,14 @@ We can see that there is an operation available, `ce/sap/s4/beh/marketingcampaig
 }
 ```
 
->We'll see another notification event later in this tutorial, for SAP S/4HANA business partners.
+>You'll see another notification event later in this tutorial, for SAP S/4HANA business partners.
 
 
 #### Data events
 
 A data event is also a message that is sent to inform that something has happened but different to the notification event, it includes the data that has changed. For example, a data event could be sent to inform that a new customer has been created in a system and include the data of the new customer.
 
-As an example, let's get familiar with the [SAP Digital Vehicle Hub Business Events](https://hub.sap.com/event/SAPDigitalVehicleHubBusinessEvents_SAPDigitalVehicleHubBusinessEvents/resource) available from SAP Digital Vehicle Hub. We can see that there is an operation available – Vehicle Created (`/sap.dmo.dvh.Vehicle.Created.v1`), and within it, we can find an example payload of the event. 
+As an example, let's get familiar with the [SAP Digital Vehicle Hub Business Events](https://hub.sap.com/event/SAPDigitalVehicleHubBusinessEvents_SAPDigitalVehicleHubBusinessEvents/resource) available from SAP Digital Vehicle Hub. You can see that there is an operation available – Vehicle Created (`/sap.dmo.dvh.Vehicle.Created.v1`), and within it, you can find an example payload of the event. 
 
 ![Exploring data event](explore4.jpg)
 
@@ -178,17 +178,17 @@ Below is an example of what a CloudEvent message will look like:
 }
 ```
 
-You'll notice that the example above is composed of many attributes. These attributes describe the event and are independent of the event data. Meaning that we can somehow process/inspect the event without needing to process its data. Now, let's dive a bit into the message itself.
+You'll notice that the example above is composed of many attributes. These attributes describe the event and are independent of the event data. Meaning that you can somehow process/inspect the event without needing to process its data. Now, let's dive a bit into the message itself.
 
 >For more information on how SAP has adopted CloudEvents, check out this blog post: https://community.sap.com/t5/application-development-blog-posts/cloudevents-at-sap/ba-p/13620137.
 
 #### CloudEvents message format
 
-A CloudEvent message is mainly composed of context attributes and data. As we briefly touched on previously, the payload in the data field will depend if it is a notification event or a data event.
+A CloudEvent message is mainly composed of context attributes and data. As you briefly touched on previously, the payload in the data field will depend if it is a notification event or a data event.
 
 #### Context attributes
 
-Several attributes can be included within the message, these attributes are known as [context attributes](https://github.com/cloudevents/spec/blob/v1.0.2/cloudevents/spec.md#context-attributes) and the idea is that these context attributes can be used to describe the event. We can think of these context attributes as the header information of our event.
+Several attributes can be included within the message, these attributes are known as [context attributes](https://github.com/cloudevents/spec/blob/v1.0.2/cloudevents/spec.md#context-attributes) and the idea is that these context attributes can be used to describe the event. You can think of these context attributes as the header information of our event.
 
 Let's explore some of the attributes available.
 
@@ -203,11 +203,11 @@ Let's explore some of the attributes available.
 
 #### Extension context attributes
 
-A CloudEvent message may also include additional context attributes, which are not defined as part of the specification. These additional attributes are known as "extension context attributes" and can be used by the producer systems to include additional metadata to an event, similar to how we can use HTTP custom headers.
+A CloudEvent message may also include additional context attributes, which are not defined as part of the specification. These additional attributes are known as "extension context attributes" and can be used by the producer systems to include additional metadata to an event, similar to how you can use HTTP custom headers.
 
 👉 Check out the events available for the [SAP Digital Vehicle Hub](https://hub.sap.com/event/SAPDigitalVehicleHubBusinessEvents_SAPDigitalVehicleHubBusinessEvents/resource) in the SAP Business Accelerator Hub.
 
-For example, in the [SAP Digital Vehicle Hub Business Events package](https://hub.sap.com/event/SAPDigitalVehicleHubBusinessEvents_SAPDigitalVehicleHubBusinessEvents), we can see that the event is raised when a vehicle changes – `sap.dmo.dvh.Vehicle.Changed.v1` – and it contains the extension context attribute `sappassport`, which is an SAP-specific tracing identifier.
+For example, in the [SAP Digital Vehicle Hub Business Events package](https://hub.sap.com/event/SAPDigitalVehicleHubBusinessEvents_SAPDigitalVehicleHubBusinessEvents), you can see that the event is raised when a vehicle changes – `sap.dmo.dvh.Vehicle.Changed.v1` – and it contains the extension context attribute `sappassport`, which is an SAP-specific tracing identifier.
 
 ```JSON
 {
@@ -225,7 +225,7 @@ For example, in the [SAP Digital Vehicle Hub Business Events package](https://hu
 
 #### Data field
 
-A CloudEvent message may include a payload but this is not required. If included, it will be in the format specified in the `datacontenttype` context attribute. Although it is not required, we will generally have a payload in messages. Below we can see an example of an event message that contains a payload.
+A CloudEvent message may include a payload but this is not required. If included, it will be in the format specified in the `datacontenttype` context attribute. Although it is not required, you will generally have a payload in messages. Below you can see an example of an event message that contains a payload.
 
 ```JSON
 {
@@ -243,12 +243,12 @@ A CloudEvent message may include a payload but this is not required. If included
 }
 ```
 
-Now that we are familiar with the CloudEvents format, let's explore the Business Partner events available in SAP S/4HANA Cloud.
+Now that you are familiar with the CloudEvents format, let's explore the Business Partner events available in SAP S/4HANA Cloud.
 
 
 ### Tour business partner events in SAP S/4HANA Cloud 
 
-As part of this CodeJam, we will interact with the Business Partner data from an SAP S/4HANA Cloud system. In our scenario, the Business Partner event will be used to inform that a Business Partner has been created and it will be triggered with the creation of a new Business Partner in the SAP S/4HANA Cloud system.
+As part of this CodeJam, you will interact with the Business Partner data from an SAP S/4HANA Cloud system. In our scenario, the Business Partner event will be used to inform that a Business Partner has been created and it will be triggered with the creation of a new Business Partner in the SAP S/4HANA Cloud system.
 
 👉 Now that you are familiar with how to get around the SAP Business Accelerator Hub, search for the [Business Partner events](https://api.sap.com/products/SAPS4HANACloud/apis/all) available for SAP S/4HANA Cloud Public Edition. Check out the different operations and get acquainted with the payload for the Business Partner changed event, [https://hub.sap.com/event/CE_BUSINESSPARTNEREVENTS/resource](https://hub.sap.com/event/CE_BUSINESSPARTNEREVENTS/resource).
 
@@ -266,9 +266,9 @@ As part of this CodeJam, we will interact with the Business Partner data from an
 }
 ```
 
-The event shared above would be considered a notification event, as it only contains the Business Partner ID that has been changed. As we can see it doesn't contain any information about the Business Partner itself, just the ID. 
+The event shared above would be considered a notification event, as it only contains the Business Partner ID that has been changed. As you can see it doesn't contain any information about the Business Partner itself, just the ID. 
 
-If we would like to get more information about the Business Partner, we would need to call the [Business Partner (A2X) API](https://hub.sap.com/api/API_BUSINESS_PARTNER/overview), available in SAP S/4HANA Cloud, to get the details.
+If you would like to get more information about the Business Partner, you would need to call the [Business Partner (A2X) API](https://hub.sap.com/api/API_BUSINESS_PARTNER/overview), available in SAP S/4HANA Cloud, to get the details.
 
 > 🧭 Take some time to explore what's documented on the [Business Partner events - Overview page](https://hub.sap.com/event/CE_BUSINESSPARTNEREVENTS/overview). You will be able to find lots of valuable information here, for example, [event reference](https://hub.sap.com/event/CE_BUSINESSPARTNEREVENTS/resource), event specifications (in JSON and YAML format), and a link to the [documentation](https://help.sap.com/docs/SAP_S4HANA_CLOUD/3c916ef10fc240c9afc594b346ffaf77/a75345282ddd4054a1e5ce7687e4b088.html?locale=en-US&state=PRODUCTION&version=2402.500).
 

@@ -10,7 +10,7 @@ primary_tag: software-product>sap-integration-suite
 
 # Queues and subscriptions in SAP Integration Suite, advanced event mesh
 
-<!-- description -->Learn how we can configure queues and topic subscription so that we don't a consumer doesn't miss any events emitted by a publisher.
+<!-- description -->Learn how you can configure queues and topic subscription so that you don't a consumer doesn't miss any events emitted by a publisher.
 
 
 ## Prerequisites
@@ -23,7 +23,7 @@ primary_tag: software-product>sap-integration-suite
 
 
 ## Intro
-In some scenarios, it is unacceptable to miss any events and we need to ensure that we receive and process all messages published. Fortunately, there is a mechanism to retain messages without the need for a consumer service to be online 100% of the time. Then, the consumer can process the messages asynchronously or whenever it is available. Enter **Queues**.
+In some scenarios, it is unacceptable to miss any events and you need to ensure that you receive and process all messages published. Fortunately, there is a mechanism to retain messages without the need for a consumer service to be online 100% of the time. Then, the consumer can process the messages asynchronously or whenever it is available. Enter **Queues**.
 
 ### Queues
 
@@ -42,7 +42,7 @@ In the case of AEM, queues can be durable or non-durable:
 
 ### Topic subscription
 
-As mentioned before, we can subscribe to a topic directly. A topic subscription is created after establishing a connection to AEM. We achieved this in the [previous tutorial](../pubsub-view-events/), when we subscribed to the `try-me` topic in the **Subscriber** section of the **Try Me!** page. 
+As mentioned before, you can subscribe to a topic directly. A topic subscription is created after establishing a connection to AEM. You achieved this in the [previous tutorial](../pubsub-view-events/), when you subscribed to the `try-me` topic in the **Subscriber** section of the **Try Me!** page. 
 
 This is not a polling mechanism, but a running connection is needed, through which AEM will send a message to the subscriber. In this case, the web page. If there is no subscriber available, the message will be missed.
 
@@ -63,7 +63,7 @@ In AEM there is a concept of a **Topic Endpoint**. A topic endpoint is a durable
 
 ### Create a Queue
 
-> 🚨 Before we create a queue, make sure you open the `Queues` link in a new tab, so that you don't have to re-enter the credentials in the `Try Me!` page and connect again to the event broker.
+> 🚨 Before you create a queue, make sure you open the `Queues` link in a new tab, so that you don't have to re-enter the credentials in the `Try Me!` page and connect again to the event broker.
 
 1. Select the **Queues** link on the left side and **Open in a New Tab**to see the queues in the event broker service. 
 
@@ -81,7 +81,7 @@ In AEM there is a concept of a **Topic Endpoint**. A topic endpoint is a durable
     
 3. Leave all the default settings, and click **Apply**. 
 
-    Our queue has no subscriptions at the moment, so let's go ahead and add a subscription to the Business Partner topic, e.g. `default/sap.s4/S4D/ce/sap/s4/beh/businesspartner/v1/BusinessPartner/Created/v1`.
+    Our queue has no subscriptions at the moment, so let's go ahead and add a subscription to the Business Partner topic, for example `default/sap.s4/S4D/ce/sap/s4/beh/businesspartner/v1/BusinessPartner/Created/v1`.
 
 4. Click on the queue you just created.
    
@@ -99,7 +99,7 @@ In AEM there is a concept of a **Topic Endpoint**. A topic endpoint is a durable
 
 
 ### Subscribe to a Queue
-Now that we have created a queue, let's subscribe to it in the **Try Me!** page.
+Now that you have created a queue, let's subscribe to it in the **Try Me!** page.
 
 1. Go back to the previous tab, which is the **Try Me!** page.
 
@@ -119,7 +119,7 @@ Now that we have created a queue, let's subscribe to it in the **Try Me!** page.
 
     If you've published a message after creating the queue, some messages would have been accumulated in the queue and they will be displayed in the UI. If not, publish a new message, and your queue will receive it and it will then be displayed in the UI.
 
->🧭 Take some time to explore further what we've learned in this tutorial. Some ideas:
+>🧭 Take some time to explore further what you've learned in this tutorial. Some ideas:
 >
 >- Publishing:
 >
@@ -142,7 +142,7 @@ Now that we have created a queue, let's subscribe to it in the **Try Me!** page.
 
 ### Further study
 
-We've covered a few things in this tutorial. We've learned about topic subscriptions, queues, and how to publish and subscribe to events in the event broker service using the `Try Me!` page. We've also learned about the different types of queues, durable and non-durable, and how they can be used to ensure that messages are not lost if the consumer is offline. We created a queue, subscribed to a topic and consumed messages. These are activities that we will do more in future exercises.
+You've covered a few things in this tutorial. You've learned about topic subscriptions, queues, and how to publish and subscribe to events in the event broker service using the `Try Me!` page. You've also learned about the different types of queues, durable and non-durable, and how they can be used to ensure that messages are not lost if the consumer is offline. You created a queue, subscribed to a topic and consumed messages. These are activities that you will do more in future exercises.
 
 - Topic endpoints and Queues - [link](https://help.pubsub.em.services.cloud.sap/Get-Started/topic-endpoints-queues.htm)
 - Understanding Solace endpoints: Queues vs Topic endpoints - [link](https://solace.com/blog/queues-vs-topic-endpoints/)

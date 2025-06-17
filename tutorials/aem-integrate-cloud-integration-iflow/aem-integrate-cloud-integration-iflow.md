@@ -10,7 +10,7 @@ primary_tag: software-product>sap-integration-suite
 
 # Using Cloud Integration to consume and publish in SAP Integration Suite, advanced event mesh
 
-<!-- description -->Learn how we can configure an integration flow in Cloud Integration to consume and publish events from/to SAP Integration Suite, advanced event mesh.
+<!-- description -->Learn how you can configure an integration flow in Cloud Integration to consume and publish events from/to SAP Integration Suite, advanced event mesh.
 
 ## Prerequisites
 - You have access to an SAP Integration Suite, advanced event mesh tenant and an SAP Integration Suite tenant.
@@ -22,29 +22,29 @@ primary_tag: software-product>sap-integration-suite
 
 ## Intro
 
-In this tutorial, we will consume the events from AEM using the Cloud Integration service. We will leverage the [AEM adapter](https://hub.sap.com/integrationadapter/AdvancedEventMesh) available and use it in an integration flow to consume events from a queue in AEM (the AEM adapter uses the Solace Messaging protocol). We will then enrich the message and publish it to a topic. 
+In this tutorial, you will consume the events from AEM using the Cloud Integration service. You will leverage the [AEM adapter](https://hub.sap.com/integrationadapter/AdvancedEventMesh) available and use it in an integration flow to consume events from a queue in AEM (the AEM adapter uses the Solace Messaging protocol). You will then enrich the message and publish it to a topic. 
 
-By the end of this tutorial, we will achieve a communication scenario like the one below.
+By the end of this tutorial, you will achieve a communication scenario like the one below.
 
 ![AEM Cloud Integration connectivity](assets/systems-interacting-cloud-integration.png)
 
 > The goal of this exercise is not to create an integration flow from scratch but to get familiar with the AEM integration adapter and understand the connectivity mechanism between AEM and Cloud Integration.
 
-Before we get started, make a note of the connection details for the Solace Messaging adapter available in the event broker service, as we will be using these details in the integration flow configuration.
+Before you get started, make a note of the connection details for the Solace Messaging adapter available in the event broker service, as you will be using these details in the integration flow configuration.
 
 ![Solace Messaging protocol](assets/solace-messaging-protocol-connection.png)
 
 ### Queue for Cloud Integration
 
-👉 Access the event broker service that you want to connect to and create or clone a queue for the exclusive access of Cloud Integration. If cloning an existing queue, make sure to also clone the subscriptions, see screenshot below. In the tutorial, [Queues and subscriptions in SAP Integration Suite, advanced event mesh](../pubsub-queues-subscriptions/pubsub-queues-subscriptions.md), we can see how we can create a queue from scratch.
+👉 Access the event broker service that you want to connect to and create or clone a queue for the exclusive access of Cloud Integration. If cloning an existing queue, make sure to also clone the subscriptions, see screenshot below. In the tutorial, [Queues and subscriptions in SAP Integration Suite, advanced event mesh](../pubsub-queues-subscriptions/pubsub-queues-subscriptions.md), you can see how you can create a queue from scratch.
 
 ![Queue for Cloud Integration](assets/clone-queue-cloud-integration.png)
 
-We will be connecting to the queue from Cloud Integration, to consume the events received by the queue.
+You will be connecting to the queue from Cloud Integration, to consume the events received by the queue.
 
 ### Set up components in Cloud Integration
 
-Before we can receive message from the queue, we need to set up a few things in Cloud Integration:
+Before you can receive message from the queue, you need to set up a few things in Cloud Integration:
 
 1. Create a secure parameter for the Solace Messaging password.
 2. Import the Advanced Event Mesh adapter from the SAP Business Accelerator Hub.
@@ -60,11 +60,11 @@ Before we can receive message from the queue, we need to set up a few things in 
 | Description      | Password for Solace Messaging in my AEM broker                                             |
 | Secure Parameter | *Password field in the Connect > Solace messaging section* |
 
-Take note of the secure parameter name as we will be using it in the integration flow when configuring the flow before deployment.
+Take note of the secure parameter name as you will be using it in the integration flow when configuring the flow before deployment.
 
 #### Import the Advanced Event Mesh adapter
 
-> Importing the Advanced Event Mesh adapter from the SAP Business Accelerator Hub to the tenant might not be always necessary, as the adapter might be already available in the tenant. For example, if you have already used the adapter in a different integration flow, then the adapter will be available in the tenant. Also, the first time you set up a Sender/Receiver to use the AdvancedEventMesh adapter, it will automatically get the adapter from the SAP Business Accelerator Hub and deploy it in the tenant. Not the case in this exercise as we are importing an existing integration flow and we aren't setting up the connections from scratch. The steps below are provided for the case when the adapter is not available in the tenant.
+> Importing the Advanced Event Mesh adapter from the SAP Business Accelerator Hub to the tenant might not be always necessary, as the adapter might be already available in the tenant. For example, if you have already used the adapter in a different integration flow, then the adapter will be available in the tenant. Also, the first time you set up a Sender/Receiver to use the AdvancedEventMesh adapter, it will automatically get the adapter from the SAP Business Accelerator Hub and deploy it in the tenant. Not the case in this exercise as you are importing an existing integration flow and you aren't setting up the connections from scratch. The steps below are provided for the case when the adapter is not available in the tenant.
 
 👉 Go to your SAP Integration Suite instance and navigate to `Discover` > `Integrations`, search for `Advanced Event Mesh` and select the Advanced Event Mesh adapter for SAP Integration Suite. 
 
@@ -84,7 +84,7 @@ Now the AEM adapter is in the tenant and you can see that there is a new integra
 
 #### Import the integration package
 
-Now we will go ahead and import the sample integration package available [here](./assets/aem-iflow-sample.zip).
+Now you will go ahead and import the sample integration package available [here](./assets/aem-iflow-sample.zip).
 
 > Ensure that you've downloaded the `aem-iflow-sample.zip` file from the assets folder in the GitHub repository. The integration package is available here: [https://github.com/sap-tutorials/eda/blob/main/tutorials/aem-integrate-cloud-integration-iflow/assets/aem-iflow-sample.zip](https://github.com/sap-tutorials/eda/blob/main/tutorials/aem-integrate-cloud-integration-iflow/assets/aem-iflow-sample.zip).
 
@@ -101,7 +101,7 @@ As stated at the beginning, the integration flow is very simple, it consumes the
 > 🧭 Take some time to explore the integration flow itself...Some ideas: 
 > - Check the tabs and configuration options available in the sender adapter (Connection, Processing).
 > - Check the tabs and configuration options available in the sender adapter (Connection, Processing, Message properties).
-> - What are we doing in the Groovy script that's enriching the message?
+> - What are you doing in the Groovy script that's enriching the message?
 > - Which is the Transport Protocol used by the adapters?
 > - Which is the Message Protocol used by the adapters?
 
@@ -136,13 +136,13 @@ If you are using SAP Integration Suite in the BTP trial environment, it might ta
 
 ### Monitor integration flow and produced messages
 
-Now our integration flow is ready to process the purchased tickets events from AEM. The service which is simulating the ticket purchased events is continuously sending events to the topic configured in the receiver adapter, e.g. `your/topic/abc` and in a matter of seconds we will see our integration flow processing the events.
+Now our integration flow is ready to process the purchased tickets events from AEM. The service which is simulating the ticket purchased events is continuously sending events to the topic configured in the receiver adapter, for example `your/topic/abc` and in a matter of seconds you will see our integration flow processing the events.
 
 👉 Go to the `Monitor` > `Integrations and APIs` > `Monitor Message Process` > `All Artifacts` tile and see the messages being processed.
 
 ![Cloud Integration - Message processing](assets/cloud-integration-message-processing.png)
 
-Also, we can check the produced messages in the event broker service by subscribing to the topic where the integration flow is publishing the messages.
+Also, you can check the produced messages in the event broker service by subscribing to the topic where the integration flow is publishing the messages.
 
 👉 Go to the `Try Me!` UI in the event broker service you are connecting to and subscribe to the topic defined in the AEM receiver adapter. Same as before, you will receive "enriched" messages published on the topic in a matter of seconds.
 
@@ -150,7 +150,7 @@ Also, we can check the produced messages in the event broker service by subscrib
 
 ### Further Study
 
-We've covered a lot in this tutorial. We started by creating a separate queue for Cloud Integration and then set up the components in Cloud Integration. We created a secure parameter for the Solace Messaging password, imported the Advanced Event Mesh adapter from the SAP Business Accelerator Hub and imported the integration flow available in the assets folder. Finally, configured the integration flow, deployed it and monitored the messages flowing in Cloud Integration. Hopefully, this gives you a hint on what is possible when connecting Cloud Integration with SAP Integration Suite, advanced event mesh using the AEM adapter.
+You've covered a lot in this tutorial. You started by creating a separate queue for Cloud Integration and then set up the components in Cloud Integration. You created a secure parameter for the Solace Messaging password, imported the Advanced Event Mesh adapter from the SAP Business Accelerator Hub and imported the integration flow available in the assets folder. Finally, configured the integration flow, deployed it and monitored the messages flowing in Cloud Integration. Hopefully, this gives you a hint on what is possible when connecting Cloud Integration with SAP Integration Suite, advanced event mesh using the AEM adapter.
 
 - Advanced Event Mesh adapter in the SAP Business Accelerator Hub - [link](https://hub.sap.com/integrationadapter/AdvancedEventMesh)
 - Advanced Event Mesh adapter - Help documentation - [link](https://help.sap.com/docs/integration-suite/sap-integration-suite/advanced-event-mesh-adapter)
