@@ -17,8 +17,8 @@ primary_tag: software-product>sap-integration-suite
 
 
 ## You will learn
-- How to configure the AEM sender adapter in Cloud Integration
-- How to configure the AEM receiver adapter in Cloud Integration
+- How to configure the AEM sender adapter in Cloud Integration.
+- How to configure the AEM receiver adapter in Cloud Integration.
 
 ## Intro
 
@@ -152,6 +152,6 @@ Also, you can check the produced messages in the event broker service by subscri
 
 You've covered a lot in this tutorial. You started by creating a separate queue for Cloud Integration and then set up the components in Cloud Integration. You created a secure parameter for the Solace Messaging password, imported the Advanced Event Mesh adapter from the SAP Business Accelerator Hub and imported the integration flow available in the assets folder. Finally, configured the integration flow, deployed it and monitored the messages flowing in Cloud Integration. Hopefully, this gives you a hint on what is possible when connecting Cloud Integration with SAP Integration Suite, advanced event mesh using the AEM adapter.
 
-- Advanced Event Mesh adapter in the SAP Business Accelerator Hub - [link](https://hub.sap.com/integrationadapter/AdvancedEventMesh)
-- Advanced Event Mesh adapter - Help documentation - [link](https://help.sap.com/docs/integration-suite/sap-integration-suite/advanced-event-mesh-adapter)
-- Solace Message Format (SMF) - [link](https://docs.solace.com/API/Component-Maps.htm)
+- Advanced Event Mesh adapter in the SAP Business Accelerator Hub - [link](https://hub.sap.com/integrationadapter/AdvancedEventMesh).
+- Advanced Event Mesh adapter - Help documentation - [link](https://help.sap.com/docs/integration-suite/sap-integration-suite/advanced-event-mesh-adapter).
+- Solace Message Format (SMF) - [link](https://docs.solace.com/API/Component-Maps.htm).

@@ -15,8 +15,8 @@ primary_tag: software-product>sap-integration-suite
 - None.
 
 ## You will learn
-- The basics about the SAP Business Accelerator Hub 
-- About the different SAP products that can generate events
+- The basics about the SAP Business Accelerator Hub.
+- About the different SAP products that can generate events.
 
 
 ## Intro
@@ -24,15 +24,15 @@ In the SAP Business Accelerator Hub, you can discover, explore, and test the dif
 
 Among the artifacts provided by SAP products and that are described in the SAP Business Accelerator Hub:
 
-- APIs
+- APIs.
 
-- Events
+- Events.
 
-- Business objects
+- Business objects.
 
-- CDS views
+- CDS views.
 
-- Business add-ins (BAdIs)
+- Business add-ins (BAdIs).
 
 
 
@@ -279,8 +279,8 @@ Now, you might have noticed that the event samples shared in this exercise are i
 
 To expand your learning, you might want to check out the links below and think about the open questions included in this section.
 
-* Explore the events in the SAP Business Accelerator Hub - [link](https://hub.sap.com/content-type/Events/events/events)
-* CloudEvents at SAP - [link](https://community.sap.com/t5/application-development-blog-posts/cloudevents-at-sap/ba-p/13620137)
+* Explore the events in the SAP Business Accelerator Hub - [link](https://hub.sap.com/content-type/Events/events/events).
+* CloudEvents at SAP - [link](https://community.sap.com/t5/application-development-blog-posts/cloudevents-at-sap/ba-p/13620137).
 
 >**Things to Ponder**
 >

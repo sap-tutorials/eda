@@ -17,8 +17,8 @@ primary_tag: software-product>sap-build
 - You have access to an SAP Integration Suite, advanced event mesh tenant and an SAP Integration Suite tenant.
 
 ## You will learn
-- How to configure REST Delivery Points in SAP Integration Suite, advanced event mesh
-- How to forward messages from a queue to a REST consumer
+- How to configure REST Delivery Points in SAP Integration Suite, advanced event mesh.
+- How to forward messages from a queue to a REST consumer.
 
 
 ## Intro
@@ -276,9 +276,9 @@ This tutorial completed all the configuration required for the REST Delivery Poi
 
 In this tutorial, you have learned how to create a REST Delivery Point (RDP) to forward messages from a queue to a REST consumer. You used OAuth 2.0 authentication to securely deliver events to SAP Build Process Automation. Now you know a mechanism to enable systems that expose REST endpoints to "react" to events produced by an event broker service.
 
-* Managing REST Delivery Points - [link](https://docs.solace.com/Services/Managing-RDPs.htm)
-* REST Consumer Authentication Schemes - [link](https://docs.solace.com/Services/Managing-RDPs.htm#configuring-REST-consumer-authentication-schemes)
-* Integration with Advanced Mesh Service Plan for Service Cloud - [link](https://help.sap.com/docs/SAP_S4HANA_CLOUD/0f69f8fb28ac4bf48d2b57b9637e81fa/9b34c841dfba4f82af0825a2f3196ecf.html?locale=en-US)
+* Managing REST Delivery Points - [link](https://docs.solace.com/Services/Managing-RDPs.htm).
+* REST Consumer Authentication Schemes - [link](https://docs.solace.com/Services/Managing-RDPs.htm#configuring-REST-consumer-authentication-schemes).
+* Integration with Advanced Mesh Service Plan for Service Cloud - [link](https://help.sap.com/docs/SAP_S4HANA_CLOUD/0f69f8fb28ac4bf48d2b57b9637e81fa/9b34c841dfba4f82af0825a2f3196ecf.html?locale=en-US).
 
 >**Things to Ponder**
 >

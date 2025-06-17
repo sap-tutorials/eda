@@ -14,12 +14,12 @@ primary_tag: software-product>sap-integration-suite
 
 
 ## Prerequisites
-- You have access to an SAP S/4HANA Cloud system and an SAP Integration Suite, advanced event mesh tenant
+- You have access to an SAP S/4HANA Cloud system and an SAP Integration Suite, advanced event mesh tenant.
 - You've completed the previous tutorial: [Set up SAP Integration Suite, advanced event mesh](../setup-aem/setup-aem.md).
 
 
 ## You will learn
-- How to configure the connectivity between SAP S/4HANA Cloud and SAP Integration Suite, advanced event mesh
+- How to configure the connectivity between SAP S/4HANA Cloud and SAP Integration Suite, advanced event mesh.
 
 
 ## Intro
@@ -150,8 +150,8 @@ To test the connectivity, you can send a test event from SAP S/4HANA Cloud to AE
 
 You can check out the following resources to learn more about the SAP S/4HANA Cloud and SAP Integration Suite, advanced event mesh integration:
 
-- Integration Architecture Guide - Event-driven architecture: https://help.sap.com/docs/sap-btp-guidance-framework/integration-architecture-guide/event-driven-architecture?locale=en-US
-- SAP S/4HANA Cloud Integration with Advanced Mesh Service Plan: https://help.sap.com/docs/SAP_S4HANA_CLOUD/0f69f8fb28ac4bf48d2b57b9637e81fa/9b34c841dfba4f82af0825a2f3196ecf.html?locale=en-US
-- Manage Client Certificate authorities in AEM: https://help.pubsub.em.services.cloud.sap/Cloud/server_certs.htm
-- Configuring an Event Broker Service to use Client Certificate Authentication: https://help.pubsub.em.services.cloud.sap/Cloud/ght_client_certs.htm
-- Create an instance of the AEM validation service: https://help.sap.com/docs/sap-integration-suite/advanced-event-mesh/validation-of-vmr-provisioning
+- Integration Architecture Guide - Event-driven architecture: https://help.sap.com/docs/sap-btp-guidance-framework/integration-architecture-guide/event-driven-architecture?locale=en-US.
+- SAP S/4HANA Cloud Integration with Advanced Mesh Service Plan: https://help.sap.com/docs/SAP_S4HANA_CLOUD/0f69f8fb28ac4bf48d2b57b9637e81fa/9b34c841dfba4f82af0825a2f3196ecf.html?locale=en-US.
+- Manage Client Certificate authorities in AEM: https://help.pubsub.em.services.cloud.sap/Cloud/server_certs.htm.
+- Configuring an Event Broker Service to use Client Certificate Authentication: https://help.pubsub.em.services.cloud.sap/Cloud/ght_client_certs.htm.
+- Create an instance of the AEM validation service: https://help.sap.com/docs/sap-integration-suite/advanced-event-mesh/validation-of-vmr-provisioning.

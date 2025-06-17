@@ -16,8 +16,8 @@ primary_tag: software-product>sap-integration-suite
 - You have access to an SAP Integration Suite, advanced event mesh tenant. 
 
 ## You will learn
-- What are topics, subscriptions
-- How to send and receive messages using `Try Me!` page in the event broker service
+- What are topics, subscriptions.
+- How to send and receive messages using `Try Me!` page in the event broker service.
 
 ## Intro
 You are now familiar with the basic UI elements in SAP Integration Suite, advanced event mesh (AEM). 
@@ -137,9 +137,9 @@ Now that you are familiar with how you can publish and subscribe to messages in 
 
 You've covered a lot in this tutorial. You've learned about topics, how to publish and subscribe to events in the event broker service using the `Try Me!` page.
 
-- Message delivery modes - [link](https://help.pubsub.em.services.cloud.sap/Get-Started/message-delivery-modes.htm)
-- Direct Messaging - [link](https://docs.solace.com/Messaging/Direct-Msg/Direct-Messages.htm)
-- Guaranteed Messaging - [link](https://docs.solace.com/Messaging/Guaranteed-Msg/Guaranteed-Messages.htm)
+- Message delivery modes - [link](https://help.pubsub.em.services.cloud.sap/Get-Started/message-delivery-modes.htm).
+- Direct Messaging - [link](https://docs.solace.com/Messaging/Direct-Msg/Direct-Messages.htm).
+- Guaranteed Messaging - [link](https://docs.solace.com/Messaging/Guaranteed-Msg/Guaranteed-Messages.htm).
 
 >**Things to Ponder**
 >

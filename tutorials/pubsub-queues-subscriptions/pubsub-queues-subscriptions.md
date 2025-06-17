@@ -17,9 +17,9 @@ primary_tag: software-product>sap-integration-suite
 - You have access to an SAP Integration Suite, advanced event mesh tenant.
 
 ## You will learn
-- How to create a queue in an SAP Integration Suite, advanced event mesh event broker service
-- How to add topic subscriptions to a queue
-- How to consume message from a queue in the Try Me! page
+- How to create a queue in an SAP Integration Suite, advanced event mesh event broker service.
+- How to add topic subscriptions to a queue.
+- How to consume message from a queue in the Try Me! page.
 
 
 ## Intro
@@ -81,7 +81,7 @@ In AEM there is a concept of a **Topic Endpoint**. A topic endpoint is a durable
     
 3. Leave all the default settings, and click **Apply**. 
 
-    Our queue has no subscriptions at the moment, so let's go ahead and add a subscription to the Business Partner topic, for example `default/sap.s4/S4D/ce/sap/s4/beh/businesspartner/v1/BusinessPartner/Created/v1`.
+    Your queue has no subscriptions at the moment, so let's go ahead and add a subscription to the Business Partner topic, for example `default/sap.s4/S4D/ce/sap/s4/beh/businesspartner/v1/BusinessPartner/Created/v1`.
 
 4. Click on the queue you just created.
    
@@ -144,12 +144,12 @@ Now that you have created a queue, let's subscribe to it in the **Try Me!** page
 
 You've covered a few things in this tutorial. You've learned about topic subscriptions, queues, and how to publish and subscribe to events in the event broker service using the `Try Me!` page. You've also learned about the different types of queues, durable and non-durable, and how they can be used to ensure that messages are not lost if the consumer is offline. You created a queue, subscribed to a topic and consumed messages. These are activities that you will do more in future exercises.
 
-- Topic endpoints and Queues - [link](https://help.pubsub.em.services.cloud.sap/Get-Started/topic-endpoints-queues.htm)
-- Understanding Solace endpoints: Queues vs Topic endpoints - [link](https://solace.com/blog/queues-vs-topic-endpoints/)
-- Consuming messages from a queue - [link](https://help.pubsub.em.services.cloud.sap/Cloud/Consuming-Guaranteed-Messages-from-Queue-in-Broker-Manager.htm)
-- Message delivery modes - [link](https://help.pubsub.em.services.cloud.sap/Get-Started/message-delivery-modes.htm)
-- Direct Messaging - [link](https://docs.solace.com/Messaging/Direct-Msg/Direct-Messages.htm)
-- Guaranteed Messaging - [link](https://docs.solace.com/Messaging/Guaranteed-Msg/Guaranteed-Messages.htm)
+- Topic endpoints and Queues - [link](https://help.pubsub.em.services.cloud.sap/Get-Started/topic-endpoints-queues.htm).
+- Understanding Solace endpoints: Queues vs Topic endpoints - [link](https://solace.com/blog/queues-vs-topic-endpoints/).
+- Consuming messages from a queue - [link](https://help.pubsub.em.services.cloud.sap/Cloud/Consuming-Guaranteed-Messages-from-Queue-in-Broker-Manager.htm).
+- Message delivery modes - [link](https://help.pubsub.em.services.cloud.sap/Get-Started/message-delivery-modes.htm).
+- Direct Messaging - [link](https://docs.solace.com/Messaging/Direct-Msg/Direct-Messages.htm).
+- Guaranteed Messaging - [link](https://docs.solace.com/Messaging/Guaranteed-Msg/Guaranteed-Messages.htm).
 
 >**Things to Ponder**
 >

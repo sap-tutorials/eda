@@ -17,9 +17,9 @@ primary_tag: software-product>sap-integration-suite
 - SAP Integration Suite, advanced event mesh requires an Identity Authentication tenant to be configured in the subaccount. If you don't have one, please refer to [Tenant Model and Licensing](https://help.sap.com/docs/IDENTITY_AUTHENTICATION/6d6d63354d1242d185ab4830fc04feb1/93160ebd2dcb40e98aadcbb9a970f2b9.html?version=Cloud) or [SAP Business Technology Platform Bundle](https://help.sap.com/docs/IDENTITY_PROVISIONING/f48e822d6d484fa5ade7dda78b64d9f5/eb7ce66c895f4301b95b5c2f285d6667.html?version=Cloud). Once you have the tenant, you need to establish a trust configuration in the subaccount with the IAS tenant. More details included here: [Establish Trust and Federation Between UAA and Identity Authentication](https://help.sap.com/docs/BTP/65de2977205c403bbc107264b8eccf4b/161f8f0cfac64c4fa2d973bc5f08a894.html?locale=en-US&version=Cloud).
 
 ## You will learn
-- How to create an instance of SAP Integration Suite, advanced event mesh
-- How to access the SAP Integration Suite, advanced event mesh
-- How to get around the UI
+- How to create an instance of SAP Integration Suite, advanced event mesh.
+- How to access the SAP Integration Suite, advanced event mesh.
+- How to get around the UI.
 
 ## Intro
 In this tutorial, you will setup AEM, start interacting with it and you will get familiar with some key parts of the product.
@@ -79,10 +79,10 @@ In order to create an event broker service, follow the steps below:
 
 2. Enter a service name, select a Cloud Provider, Region, a Broker Release and Broker Version. Finally, a service type. To select the right service type, you need to know and understand the requirements of your client applications, for example:
 
-    - Number of client applications connecting simultaneously
-    - Maximum throughput
-    - Number of queues required
-    - Type of traffic exchanged between client applications
+    - Number of client applications connecting simultaneously.
+    - Maximum throughput.
+    - Number of queues required.
+    - Type of traffic exchanged between client applications.
 
     > To learn more about how to choose the right service class, visit the [documentation](https://help.pubsub.em.services.cloud.sap/Cloud/ght_pick_service_type.htm).
 
@@ -164,19 +164,19 @@ Creating an event mesh is quite simple, you just need to provide a name, select 
 
 Insights provide us with a centralised place where you can monitor various aspects of the AEM instance:
 
-- Resource usage
+- Resource usage.
 
-- Event mesh health
+- Event mesh health.
 
-- Message flow
+- Message flow.
 
-- High-Availability (HA) status
+- High-Availability (HA) status.
 
-- Queue, topic endpoint, RDP, and bridge health
+- Queue, topic endpoint, RDP, and bridge health.
 
-- Message spool utilization
+- Message spool utilization.
 
-- Capacity utilization
+- Capacity utilization.
 
 👉 Navigate to **Insights** and view the insights of our AEM instance.
 
@@ -192,11 +192,11 @@ In this tutorial, you explored the AEM instance that you created. You navigated 
 
 To expand your learning, you might want to check out the links below and think about the open questions included in this section.
 
-- Create Event Broker services - [link](https://help.pubsub.em.services.cloud.sap/Cloud/create-service.htm)
-- Choosing the Right Service Class for Your Event Broker Service - [link](https://help.pubsub.em.services.cloud.sap/Cloud/ght_pick_service_type.htm)
-- Creating an Event Mesh - [link](https://help.pubsub.em.services.cloud.sap/Cloud/Event-Mesh/ght_event_mesh.htm)
-- DMR or a Message VPN Bridge? - [link](https://help.pubsub.em.services.cloud.sap/Features/DMR/DMR-Overview.htm#dmr-or-vpn-bridge) 
-- Insights Advanced Monitoring - [link](https://help.pubsub.em.services.cloud.sap/Cloud/Insights/Advanced-Monitoring/using-dashboards.htm)
+- Create Event Broker services - [link](https://help.pubsub.em.services.cloud.sap/Cloud/create-service.htm).
+- Choosing the Right Service Class for Your Event Broker Service - [link](https://help.pubsub.em.services.cloud.sap/Cloud/ght_pick_service_type.htm).
+- Creating an Event Mesh - [link](https://help.pubsub.em.services.cloud.sap/Cloud/Event-Mesh/ght_event_mesh.htm).
+- DMR or a Message VPN Bridge? - [link](https://help.pubsub.em.services.cloud.sap/Features/DMR/DMR-Overview.htm#dmr-or-vpn-bridge).
+- Insights Advanced Monitoring - [link](https://help.pubsub.em.services.cloud.sap/Cloud/Insights/Advanced-Monitoring/using-dashboards.htm).
 
 >**Things to Ponder**
 >
