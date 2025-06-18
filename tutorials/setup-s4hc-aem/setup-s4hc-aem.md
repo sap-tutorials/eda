@@ -91,17 +91,17 @@ You are now ready to create the first communication arrangement needed to establ
 
     ![Create Communication Arrangement](assets/create-0492.png)
 
-2. In the **Common Data** section, select the Communication System that you created in the previous step.
+2. In the **Common Data** section, select the Communication System that you have created in the previous step.
 3. In the **Additional Properties** section, set the values for the following properties:
     - **Channel**: For example `AEM-USEAST-BROKER`
     - **Topic Space**: For example `default/sap.s4hc/[SID]`. The topic space will be the prefix for the topics where SAP S/4HANA Cloud will publish messages.
-4. As you selected the **Communication System** in item 2, the **Inbound and Outbound Communication** users will be automatically populated.
-5. Scroll down to the **Outbound Services** section and you'll see the `AMQP Host` and `port` details that you specified when defining the communication system. The **Application Protocol** field states that this uses the HTTP Service but you can safely ignore this as the communication will be done over AMQP.
+4. When you have selected the **Communication System** in item 2, the **Inbound and Outbound Communication** users will be automatically populated.
+5. Scroll down to the **Outbound Services** section and you'll see the `AMQP Host` and `port` details that you specified when defining the communication system. The **Application Protocol** field states that this uses the HTTP Service, but you can safely ignore this as the communication will be done over AMQP.
     
 
 ### Create AEM validation service instance in SAP BTP
 
-You need to create an instance of the AEM validation service in the SAP BTP Cockpit. This instance will provide a service key which will be used to configure the `SAP_COM_0493` communication arrangement that you will create in the next step.
+You need to create an instance of the AEM validation service in the SAP BTP Cockpit. This instance will provide a service key, which will be used to configure the `SAP_COM_0493` communication arrangement that you will create in the next step.
 
 1. Log in to your SAP BTP account and navigate to `Services` > `Instances and Subscription`. Click the `Create` button.
 
@@ -120,11 +120,11 @@ You need to create an instance of the AEM validation service in the SAP BTP Cock
 
 ### Create Communication Arrangement  - AEM validation assessment - SAP_COM_0493
 
-Now you are just missing to create the second communication arrangement. To create it, you will use the service key you copied in the previous step.
+Now, you are just missing to create the second communication arrangement. To create it, you will use the service key you have copied in the previous step.
 
 1. In the **Communication Arrangements** app, click on the **New** link and select the `SAP Integration Suite, Advanced Event Mesh validation assessment (SAP_COM_0493)` communication scenario
 2. Set a name in the **Arrangement Name** field.
-3. Paste the service key you copied in the previous step in the **Service Key** field.
+3. Paste the service key you have copied in the previous step in the **Service Key** field.
 4. Specify the **Channel** name, for example `AEM-USEAST-BROKER`, by clicking the Additional Properties link. This will open a new pop-up where you can enter the channel name. This is the same channel name you used in the previous communication arrangement (SAP_COM_0492).
 
     ![Create Communication Arrangement](assets/create-0493.png)
@@ -150,8 +150,8 @@ To test the connectivity, you can send a test event from SAP S/4HANA Cloud to AE
 
 You can check out the following resources to learn more about the SAP S/4HANA Cloud and SAP Integration Suite, advanced event mesh integration:
 
-- Integration Architecture Guide - Event-driven architecture: https://help.sap.com/docs/sap-btp-guidance-framework/integration-architecture-guide/event-driven-architecture?locale=en-US.
-- SAP S/4HANA Cloud Integration with Advanced Mesh Service Plan: https://help.sap.com/docs/SAP_S4HANA_CLOUD/0f69f8fb28ac4bf48d2b57b9637e81fa/9b34c841dfba4f82af0825a2f3196ecf.html?locale=en-US.
-- Manage Client Certificate authorities in AEM: https://help.pubsub.em.services.cloud.sap/Cloud/server_certs.htm.
-- Configuring an Event Broker Service to use Client Certificate Authentication: https://help.pubsub.em.services.cloud.sap/Cloud/ght_client_certs.htm.
-- Create an instance of the AEM validation service: https://help.sap.com/docs/sap-integration-suite/advanced-event-mesh/validation-of-vmr-provisioning.
+- Integration Architecture Guide - Event-driven architecture: [https://help.sap.com/docs/sap-btp-guidance-framework/integration-architecture-guide/event-driven-architecture?locale=en-US](https://help.sap.com/docs/sap-btp-guidance-framework/integration-architecture-guide/event-driven-architecture?locale=en-US).
+- SAP S/4HANA Cloud Integration with Advanced Mesh Service Plan: [https://help.sap.com/docs/SAP_S4HANA_CLOUD/0f69f8fb28ac4bf48d2b57b9637e81fa/9b34c841dfba4f82af0825a2f3196ecf.html?locale=en-US](https://help.sap.com/docs/SAP_S4HANA_CLOUD/0f69f8fb28ac4bf48d2b57b9637e81fa/9b34c841dfba4f82af0825a2f3196ecf.html?locale=en-US).
+- Manage Client Certificate authorities in AEM: [https://help.pubsub.em.services.cloud.sap/Cloud/server_certs.htm](https://help.pubsub.em.services.cloud.sap/Cloud/server_certs.htm).
+- Configuring an Event Broker Service to use Client Certificate Authentication: [https://help.pubsub.em.services.cloud.sap/Cloud/ght_client_certs.htm](https://help.pubsub.em.services.cloud.sap/Cloud/ght_client_certs.htm).
+- Create an instance of the AEM validation service: [https://help.sap.com/docs/sap-integration-suite/advanced-event-mesh/validation-of-vmr-provisioning](https://help.sap.com/docs/sap-integration-suite/advanced-event-mesh/validation-of-vmr-provisioning).

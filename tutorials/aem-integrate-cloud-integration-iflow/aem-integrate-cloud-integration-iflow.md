@@ -136,7 +136,7 @@ If you are using SAP Integration Suite in the BTP trial environment, it might ta
 
 ### Monitor integration flow and produced messages
 
-Now our integration flow is ready to process the purchased tickets events from AEM. The service which is simulating the ticket purchased events is continuously sending events to the topic configured in the receiver adapter, for example `your/topic/abc` and in a matter of seconds you will see our integration flow processing the events.
+Now, our integration flow is ready to process the purchased tickets events from AEM. The service which is simulating the ticket purchased events is continuously sending events to the topic configured in the receiver adapter, for example `your/topic/abc` and in a matter of seconds you will see our integration flow processing the events.
 
 👉 Go to the `Monitor` > `Integrations and APIs` > `Monitor Message Process` > `All Artifacts` tile and see the messages being processed.
 

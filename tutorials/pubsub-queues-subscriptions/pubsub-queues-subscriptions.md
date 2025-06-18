@@ -81,7 +81,7 @@ In AEM there is a concept of a **Topic Endpoint**. A topic endpoint is a durable
     
 3. Leave all the default settings, and click **Apply**. 
 
-    Your queue has no subscriptions at the moment, so let's go ahead and add a subscription to the Business Partner topic, for example `default/sap.s4/S4D/ce/sap/s4/beh/businesspartner/v1/BusinessPartner/Created/v1`.
+    Your queue has no subscriptions at the moment, so let's go ahead and add a subscription to the Business Partner topic, for example, `default/sap.s4/S4D/ce/sap/s4/beh/businesspartner/v1/BusinessPartner/Created/v1`.
 
 4. Click on the queue you just created.
    

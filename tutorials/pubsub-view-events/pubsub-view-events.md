@@ -31,7 +31,7 @@ Let's get started.
 
 ### What is topic?
 
-In a previous exercise, you mentioned that a topic is a means by which a publisher classifies a message. A topic tells us what type of message you will receive if you subscribe to that topic.
+In a previous tutorial, it was mentioned that a topic is a means by which a publisher classifies a message. A topic tells us what type of message you will receive if you subscribe to that topic.
 
 In essence, it is a string that is composed of one or more levels. Each level is separated by a forward slash (/) and the levels can be anything. This is commonly known as topic-level granularity. The granularity allows for more targeted and efficient information exchange. 
 
@@ -69,7 +69,7 @@ In some scenarios, this is unacceptable and you need to ensure that you receive 
 
 ### Basic message exchange
 
-Navigate to **Cluster Manager**, and go to the event broker service configured. You will land in the `Status` tab of the service.
+Navigate to **Cluster Manager**, and go to the event broker service configured. You will get to the `Status` tab of the service.
 
 In the event broker service, go to the **Try Me!** tab.
 

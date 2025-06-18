@@ -52,11 +52,11 @@ The start page is divided into three sections:
 
 Mission Control is where you manage the event broker services and event meshes (which contain a bunch of event broker services), and monitor the health of our AEM instance.
 
->**IMPORTANT:** your AEM instance will not have any event broker services or an event mesh. The images below are just an example of what it will look like once you have a fully configured AEM with multiple event broker service instances.
+>**IMPORTANT:** Your AEM instance will not have any event broker services or an event mesh. The images below are just an example of what it will look like once you have a fully configured AEM with multiple event broker service instances.
 
 Mission control is divided into two sections:
 
-- **Cluster Manager:** Here, you can find the event broker services available in our instance, and you can create, configure and delete event brokers.
+- **Cluster Manager:** Here, you can find the event broker services available in your instance, and you can create, configure and delete event brokers.
 
     👉 Navigate to **Cluster Manager** and view the event broker services available. 
 
@@ -148,7 +148,7 @@ Now, let's explore the event broker service available in our instance.
     
 ### Event Meshes
 
-As you learned in the previous section, an event mesh is composed of multiple event brokers that can span different regions and data centers. An event broker can only belong to a single mesh and the communication between event broker services in a mesh is powered by Dynamic Message Routing.event-broker-configuration
+As you have learned in the previous section, an event mesh is composed of multiple event brokers that can span different regions and data centers. An event broker can only belong to a single mesh and the communication between event broker services in a mesh is powered by Dynamic Message Routing.event-broker-configuration
 
 > **Dynamic Message Routing** is the underlying technology enabling message exchange between different event broker services (nodes) in an event mesh. DMR allows connected nodes to automatically determine how to forward event messages within the same site (horizontal scaling) or between sites (multi-site scaling) to exchange subscription information.
 
@@ -156,27 +156,27 @@ As you learned in the previous section, an event mesh is composed of multiple ev
 
 > DMR is a key feature of the event mesh that allows you to scale your event mesh horizontally and across sites (multi-site).
 
-In our case, you have don't have a mesh but you will be able to create one if you'd have more than one event broker service. Note that not all event broker services need to be part of a mesh and is a broker can exist as standalone. Also, you can have/manage multiple event meshes in an AEM instance. In the previous section there is an example of an SAP Integration Suite, advanced event mesh instance with multiple event broker services.
+In your case, you have don't have a mesh but you will be able to create one if you'd have more than one event broker service. Note that not all event broker services need to be part of a mesh and is a broker can exist as standalone. Also, you can have/manage multiple event meshes in an AEM instance. In the previous section there is an example of an SAP Integration Suite, advanced event mesh instance with multiple event broker services.
 
 Creating an event mesh is quite simple, you just need to provide a name, select the event broker services that will be part of the mesh and specify the links between the event broker services.
 
 ### Insights
 
-Insights provide us with a centralised place where you can monitor various aspects of the AEM instance:
+Insights provide you with a centralised place where you can monitor various aspects of the AEM instance:
 
-- Resource usage.
+- Resource usage
 
-- Event mesh health.
+- Event mesh health
 
-- Message flow.
+- Message flow
 
-- High-Availability (HA) status.
+- High-Availability (HA) status
 
-- Queue, topic endpoint, RDP, and bridge health.
+- Queue, topic endpoint, RDP, and bridge health
 
-- Message spool utilization.
+- Message spool utilization
 
-- Capacity utilization.
+- Capacity utilization
 
 👉 Navigate to **Insights** and view the insights of our AEM instance.
 
