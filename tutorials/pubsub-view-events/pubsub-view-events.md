@@ -81,7 +81,7 @@ Just as a quick test, let's use the Try Me! functionality to quickly establish a
 
 In the **Try Me!** tab, follow the instructions below:
 
-1. Click on the `Open Broker Manager` button.
+1. Choose the `Open Broker Manager` button.
 
     ![Open Broker Manager](assets/try1.png)
     
@@ -95,7 +95,7 @@ In the **Try Me!** tab, follow the instructions below:
 
     ![Publisher - Establish connection](assets/publisher-establish-connection.png)
 
-4. Click **Connect**.
+4. Choose **Connect**.
 
     You should now see **Connected**.
 
@@ -105,7 +105,7 @@ In the **Try Me!** tab, follow the instructions below:
 
     ![Subscriber credentials](assets/try4.png)
 
-    Click **Connect**.
+    Choose **Connect**.
 
 6. After establishing the connection, subscribe to the topic `try-me` by clicking the **Subscribe** button.
 
@@ -126,7 +126,7 @@ In the **Try Me!** tab, follow the instructions below:
 
 Now that you are familiar with how you can publish and subscribe to messages in the **Try Me!** page, let's explore how you can subscribe to SAP S/4HANA Cloud events.
 
-1. On the `Subscriber` side, add a new topic `default/sap.s4/S4D/>` and click the **Subscribe** button.
+1. On the `Subscriber` side, add a new topic `default/sap.s4/S4D/>` and choose the **Subscribe** button.
 
 2. Trigger an event from the SAP S/4HANA Cloud system. For example, if you configure the Business Partner created event, this should be published to a topic like: `default/sap.s4/S4D/ce/sap/s4/beh/businesspartner/v1/BusinessPartner/Created/v1`.
 

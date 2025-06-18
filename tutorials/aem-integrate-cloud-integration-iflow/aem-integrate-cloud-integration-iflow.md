@@ -70,13 +70,13 @@ Take note of the secure parameter name as you will be using it in the integratio
 
 ![Search AEM adapter](assets/search-aem-adapter.png)
 
-👉 Once in the adapter details, click on the `Copy` button in the top right-hand corner. This action will copy the adapter to your SAP Integration Suite tenant.
+👉 Once in the adapter details, choose the `Copy` button in the top right-hand corner. This action will copy the adapter to your SAP Integration Suite tenant.
 
 ![Copy AEM adapter to the instance](assets/copy-adapter-to-instance.png)
 
 Now the AEM adapter is in the tenant and you can see that there is a new integration package called `Advanced Event Mesh Adapter for SAP Integration Suite`, within its artifacts is the adapter itself. Let's deploy it.
 
-👉 Click the `Actions` button for the integration adapter and select `Deploy`.
+👉 Choose the `Actions` button for the integration adapter and select `Deploy`.
 
 ![Deploy AEM adapter](assets/deploy-aem-adapter.png)
 
@@ -88,7 +88,7 @@ Now you will go ahead and import the sample integration package available [here]
 
 > Ensure that you've downloaded the `aem-iflow-sample.zip` file from the assets folder in the GitHub repository. The integration package is available here: [https://github.com/sap-tutorials/eda/blob/main/tutorials/aem-integrate-cloud-integration-iflow/assets/aem-iflow-sample.zip](https://github.com/sap-tutorials/eda/blob/main/tutorials/aem-integrate-cloud-integration-iflow/assets/aem-iflow-sample.zip).
 
-👉 Go to your SAP Integration Suite instance and navigate to `Design` > `Integrations and APIs` and click the **Import** button in the top right hand corner, select the `aem-iflow-sample.zip` file and click the Open button.
+👉 Go to your SAP Integration Suite instance and navigate to `Design` > `Integrations and APIs` and choose the **Import** button in the top right hand corner, select the `aem-iflow-sample.zip` file and choose the Open button.
 
 ![Import integration package file](assets/import-integration-package.png)
 
@@ -111,7 +111,7 @@ Now that you are familiar with the `Consume_Publish_Events_AEM` integration flow
 
 ![Configure integration flow](assets/configure-integration-flow.png)
 
-👉 Click the `Actions` button for the integration flow and `Configure` its externalised parameters with the details below:
+👉 Choose the `Actions` button for the integration flow and `Configure` its externalised parameters with the details below:
 
 ![Configure externalised parameters](assets/configure-externalised-parameters.png)
 
@@ -126,7 +126,7 @@ Now that you are familiar with the `Consume_Publish_Events_AEM` integration flow
 
 ### Deploy the Integration Flow
 
-👉 Once you've configured the externalised parameters, click the `Deploy` button to deploy the integration flow.
+👉 Once you've configured the externalised parameters, choose the `Deploy` button to deploy the integration flow.
 
 If you are using SAP Integration Suite in the BTP trial environment, it might take a few minutes to deploy the integration flow. Also, you might get an error message stating that it has failed to deploy. You can safely ignore this error message if it is the first time deploying as it just takes some time the first time you deploy an integration flow. 
 

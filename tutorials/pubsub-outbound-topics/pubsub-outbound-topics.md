@@ -36,7 +36,7 @@ Select the channel binding that you created in the previous tutorial, for exampl
 
 ![Select broker](assets/select-broker.png)
 
-Click the **Create** event button in the **Outbound Topic Bindings** section, search for the **\*BusinessPartner/Changed\*** topic and select the **sap/s4/beh/businesspartner/v1/BusinessPartner/Changed/v1** topic. Click the **Create** button.
+Choose the **Create** event button in the **Outbound Topic Bindings** section, search for the **\*BusinessPartner/Changed\*** topic and select the **sap/s4/beh/businesspartner/v1/BusinessPartner/Changed/v1** topic. Choose the **Create** button.
 
 ![Search topic](assets/bp-change-topic.png)
 

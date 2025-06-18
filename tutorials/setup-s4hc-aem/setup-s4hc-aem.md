@@ -28,11 +28,11 @@ Now that you are familiar with the SAP Integration Suite, advanced event mesh, y
 
 ### Maintain Client Certificates in SAP S/4HANA Cloud
 
-1. Go to the **Maintain Client Certificates** app in your SAP S/4HANA Cloud system. In the app, download the *Client Default* certificate. Select the **X.509 Certificate (.pem)** format and click the **Export** button.
+1. Go to the **Maintain Client Certificates** app in your SAP S/4HANA Cloud system. In the app, download the *Client Default* certificate. Select the **X.509 Certificate (.pem)** format and choose the **Export** button.
 
     ![Export Client Certificate](assets/export-client-certificate.png)
 
-2. Download the SAP S/4HANA Cloud server root certificate from the website. The process will vary depending on the browser. In Firefox, you can do this by clicking on the lock icon in the address bar and clicking **Connection Secure** > **More Information**. In the **Security** tab, click on **View Certificate**. In the **Certificate Viewer**, go to the **DigiCert Global Root G2** tab and click on **Download** - **PEM (Cert)** in the **Miscellaneous** section.
+2. Download the SAP S/4HANA Cloud server root certificate from the website. The process will vary depending on the browser. In Firefox, you can do this by clicking on the lock icon in the address bar and clicking **Connection Secure** > **More Information**. In the **Security** tab, choose **View Certificate**. In the **Certificate Viewer**, go to the **DigiCert Global Root G2** tab and choose **Download** - **PEM (Cert)** in the **Miscellaneous** section.
 
     ![Export Server Root Certificate](assets/export-server-root-certificate.png)
 
@@ -40,11 +40,11 @@ Now that you are familiar with the SAP Integration Suite, advanced event mesh, y
 
 In AEM, you will import the client certificate you downloaded from SAP S/4HANA Cloud. This will allow SAP S/4HANA Cloud to authenticate with AEM.
 
-1. Check Client Certificate Authentication in the event broker service: Go to **Cluster Manager** and select the event broker service where you will configure the connection. Click on the **Manage** tab and click on the **Service Authentication** tile under **Authentication and Security**. In the **Client Authentication** section, click on the **Edit Client Authentication** button. Check the **Client Certifciate Authentication** checkbox if it has not been checked before. Click the **Save** button.
+1. Check Client Certificate Authentication in the event broker service: Go to **Cluster Manager** and select the event broker service where you will configure the connection. Choose the **Manage** tab and choose on the **Service Authentication** tile under **Authentication and Security**. In the **Client Authentication** section, choose the **Edit Client Authentication** button. Check the **Client Certifciate Authentication** checkbox if it has not been checked before. Choose the **Save** button.
 
     ![Enable Client Certificate](assets/enable-client-authentication.png)
 
-2. Import SAP S/4HANA Cloud website root certificate: In **Authentication and Security**, click on **Client Authorities**. Click on the Add Client Certificate Authority button. In the pop-up, enter a name and click the Import From File link to select the previously downloaded certificate. Click the **Save** button.
+2. Import SAP S/4HANA Cloud website root certificate: In **Authentication and Security**, choose **Client Authorities**. Choose the **Add Client Certificate Authority** button. In the pop-up, enter a name and choose the **Import From File** link to select the previously downloaded certificate. Choose the **Save** button.
 
     ![Import Client Certificate](assets/import-root-certificate.png)
 
@@ -54,11 +54,11 @@ In AEM, you will import the client certificate you downloaded from SAP S/4HANA C
 
 You now need to create a client username in AEM which will be used by SAP S/4HANA Cloud to authenticate with AEM.
 
-1. Create a new client username: In the broker manager of the event broker service that you are configuring, navigate to the **Access Control** section. Select the **Client Usernames** tab and click on the **+ Client Username** button. A pop-up will open. Enter a name for the client username, for example `my123456.s4hana.ondemand.com` and click the **Create button**. The client username needs to match the common name (CN) of the client certificate imported in AEM.
+1. Create a new client username: In the broker manager of the event broker service that you are configuring, navigate to the **Access Control** section. Select the **Client Usernames** tab and choose the **+ Client Username** button. A pop-up will open. Enter a name for the client username, for example `my123456.s4hana.ondemand.com` and choose the **Create button**. The client username needs to match the common name (CN) of the client certificate imported in AEM.
 
    ![Add Client Username](assets/access-control-client-usernames.png)
 
-2. Enable the newly created client username: In the **Edit Client Username settings**, ensure to toggle the **Enable** switch and click the **Apply** button.
+2. Enable the newly created client username: In the **Edit Client Username settings**, ensure to toggle the **Enable** switch and choose the **Apply** button.
 
     ![Enable new client username](assets/enable-new-client-username.png)
 
@@ -75,10 +75,10 @@ You need the AMQP host name and port when configuring the AEM integration scenar
 
 In SAP S/4HANA Cloud, you need to create a communication system which will be used to configure the AEM integration scenario communication arrangement in the next step.
 
-1. Go to the **Communication Systems** app in your SAP S/4HANA Cloud system. Click on the **New** button and set a value for the **System ID/System Name**, for example `AEM-USEAST-BROKER`.
+1. Go to the **Communication Systems** app in your SAP S/4HANA Cloud system. Choose the **New** button and set a value for the **System ID/System Name**, for example `AEM-USEAST-BROKER`.
 2. In the **Technical** > **General Data** section, enter the `AMQP Host` in the **Host Name** field and the `AMQP Port` in the **Port** field
-3. In the **Users for Inbound Communication** section, click on the **+ (plus)** button. In the pop-up dialog select `User Name and Password` as **Authentication Method** and select an existing user or create a new user. 
-4. In the Users for Outbound Communication section, click on the **+ (plus)** button. In the pop-up dialog select `SSL Client Certificate` as **Authentication Method** and select the Client Default certificate. This will need to be the same certificate that you downloaded previously from the **Maintain Client Certificates** app in SAP S/4HANA Cloud.
+3. In the **Users for Inbound Communication** section, choose the **+ (plus)** button. In the pop-up dialog select `User Name and Password` as **Authentication Method** and select an existing user or create a new user. 
+4. In the Users for Outbound Communication section, choose the **+ (plus)** button. In the pop-up dialog select `SSL Client Certificate` as **Authentication Method** and select the Client Default certificate. This will need to be the same certificate that you downloaded previously from the **Maintain Client Certificates** app in SAP S/4HANA Cloud.
 5. Finalise the creation of the Communication system by clicking the **Save** button.
 
     ![Create Communication System](assets/create-communication-system.png)
@@ -87,7 +87,7 @@ In SAP S/4HANA Cloud, you need to create a communication system which will be us
 
 You are now ready to create the first communication arrangement needed to establish the communication between SAP S/4HANA Cloud and AEM. 
 
-1. Go to the **Communication Arrangements** app in the SAP S/4HANA Cloud system. Click on the **New** link and select the `SAP Integration Suite, Advanced Event Mesh integration (SAP_COM_0492)` communication scenario, set a name in the **Arrangement Name** field and then click the **Create** button.
+1. Go to the **Communication Arrangements** app in the SAP S/4HANA Cloud system. Choose the **New** link and select the `SAP Integration Suite, Advanced Event Mesh integration (SAP_COM_0492)` communication scenario, set a name in the **Arrangement Name** field and then choose the **Create** button.
 
     ![Create Communication Arrangement](assets/create-0492.png)
 
@@ -103,7 +103,7 @@ You are now ready to create the first communication arrangement needed to establ
 
 You need to create an instance of the AEM validation service in the SAP BTP Cockpit. This instance will provide a service key, which will be used to configure the `SAP_COM_0493` communication arrangement that you will create in the next step.
 
-1. Log in to your SAP BTP account and navigate to `Services` > `Instances and Subscription`. Click the `Create` button.
+1. Log in to your SAP BTP account and navigate to `Services` > `Instances and Subscription`. Choose the `Create` button.
 
     ![Create instance](./assets/btp-cockpit-create-instance.png)
 
@@ -111,18 +111,18 @@ You need to create an instance of the AEM validation service in the SAP BTP Cock
 
     ![Create AEM validations instance](./assets/aem-validation-instance.png)
 
-3. Once the instance is created, you can click on the instance name to access the AEM validation instance and create a service binding by clicking the **Create** button in the **Service Binding** section, enter a name and click the **Create** button.
+3. Once the instance is created, you can choose the instance name to access the AEM validation instance and create a service binding by clicking the **Create** button in the **Service Binding** section, enter a name and choose the **Create** button.
 
     ![Create AEM validations service binding](./assets/aem-validation-service-binding.png)
 
-4. Once the service binding is created, you can click on the service binding name to access the service key. Copy the service key details as you will need it to configure the `SAP_COM_0493` communication arrangement in the next step.
+4. Once the service binding is created, you can choose the service binding name to access the service key. Copy the service key details as you will need it to configure the `SAP_COM_0493` communication arrangement in the next step.
 
 
 ### Create Communication Arrangement  - AEM validation assessment - SAP_COM_0493
 
 Now, you are just missing to create the second communication arrangement. To create it, you will use the service key you have copied in the previous step.
 
-1. In the **Communication Arrangements** app, click on the **New** link and select the `SAP Integration Suite, Advanced Event Mesh validation assessment (SAP_COM_0493)` communication scenario
+1. In the **Communication Arrangements** app, choose the **New** link and select the `SAP Integration Suite, Advanced Event Mesh validation assessment (SAP_COM_0493)` communication scenario
 2. Set a name in the **Arrangement Name** field.
 3. Paste the service key you have copied in the previous step in the **Service Key** field.
 4. Specify the **Channel** name, for example `AEM-USEAST-BROKER`, by clicking the Additional Properties link. This will open a new pop-up where you can enter the channel name. This is the same channel name you used in the previous communication arrangement (SAP_COM_0492).
@@ -138,7 +138,7 @@ With this final step, you have configured the connectivity between SAP S/4HANA C
 To test the connectivity, you can send a test event from SAP S/4HANA Cloud to AEM. For this, you will leverage the functionality available in the **Enterprise Event Enablement - Event Monitor** app.
 
 1. In SAP S/4HANA Cloud, go to the **Enterprise Event Enablement - Event Monitor** app. 
-2. In the app, select the channel you specified in the steps above, for example `AEM-USEAST-BROKER` and click on the **Produce Test Event** button.
+2. In the app, select the channel you specified in the steps above, for example `AEM-USEAST-BROKER` and choose the **Produce Test Event** button.
 
     ![Produce Test Event](assets/test-event-produce.png)
 

@@ -40,7 +40,7 @@ SAP Integration Suite, advanced event mesh will be forwarding events to SAP Buil
 
 1. In the SAP BTP cockpit, go to **Instances and Subscriptions**.
 
-    Under **Instances**, click the 3 dots next to the SAP Build Process Automation instance, for example, **spa-service** in the screenshot below, and select  
+    Under **Instances**, choose the 3 dots next to the SAP Build Process Automation instance, for example, **spa-service** in the screenshot below, and select  
 
     ![Create Service Key](assets/key1.png)
 
@@ -48,9 +48,9 @@ SAP Integration Suite, advanced event mesh will be forwarding events to SAP Buil
 
     ![Key name](assets/key2.png)
 
-    Click **Create**
+    Choose **Create**
 
-3. After the key is created (it will take about half a minute), click he 3 dots next to the key and download the key.
+3. After the key is created (it will take about half a minute), choose the 3 dots next to the key and download the key.
 
     ![Key name](assets/key3.png)
 
@@ -74,15 +74,15 @@ The queue will need to be subscribed to the business event that you are interest
 
 Now that you know what a REST Delivery Point is, you are ready to create a REST Delivery Point (RDP) to forward messages from the queue to a REST consumer.
 
-1. Inside the event broker service where the queue exists, click **Open Broker Manager**.
+1. Inside the event broker service where the queue exists, choose **Open Broker Manager**.
 
-2. Click **Clients** on the left-side menu.
+2. Choose **Clients** on the left-side menu.
 
-    Click **REST**.
+    Choose **REST**.
 
     ![REST client](assets/Rest1.png)
 
-3. Click **+ REST Delivery Point**.
+3. Choose **+ REST Delivery Point**.
 
     ![New REST client](assets/Rest2.png)
 
@@ -90,11 +90,11 @@ Now that you know what a REST Delivery Point is, you are ready to create a REST 
 
     ![RDP Creation](assets/rdp-creation.png)
 
-    Click **Create**.
+    Choose **Create**.
 
     A simple configuration form will appear. No need to modify anything here – **Do not enable the RDP yet**, that is, leave the toggle button off.
 
-    Click **Apply**.
+    Choose **Apply**.
 
     ![RDP Creation](assets/Rest3.png)
 
@@ -112,9 +112,9 @@ Now that you've created a REST Delivery Point, you have to specify where you wan
 
 1. Navigate to the **REST Consumers** tab.
 
-2. Click **+ REST Consumer**, and enter the name, for example, `SBPA_[SAPCommunityDisplayName]`. 
+2. Choose the **+ REST Consumer** button, and enter the name, for example, `SBPA_[SAPCommunityDisplayName]`. 
 
-    Click **Create**.
+    Choose **Create**.
 
     ![Create REST consumer](assets/create-rest-consumer.png)
 
@@ -138,7 +138,7 @@ Now that you've created a REST Delivery Point, you have to specify where you wan
     | *Token Endpoint URL*    | Concatenate the value from service key `.uaa.url`, for example *https://[host].authentication.[region].hana.ondemand.com*, and `/oauth/token`                             |
     | *Token Expiry Default*  | `3600`                                                                                                                                                             |
 
-4. Click **Apply**.
+4. Choose **Apply**.
 
     ![SBPA REST consumer](assets/rest-consumer.png)
 
@@ -151,13 +151,13 @@ Now that you have a REST consumer configured, you can proceed to bind a queue an
 
 1. Navigate to the **Queue Bindings** tab. 
 
-2. Click **+ Queue Binding**. 
+2. Choose the **+ Queue Binding** button. 
     
     Select the queue you previously created, for example, `EDP_BP_Created_[SAPCommunityDisplayName]`.
 
     ![Queue binding set up](assets/queue-binding.png)
 
-3. Click **Create**.
+3. Choose **Create**.
 
 4. A simple configuration form will be displayed. 
 
@@ -171,7 +171,7 @@ Now that you have a REST consumer configured, you can proceed to bind a queue an
     | *Request Target Evaluation* | None                     |
     | *Replace Target Authority*  | No                       |
 
-    Click **Apply**.
+    Choose **Apply**.
 
     ![Post request target](assets/queue-binding1.png)
 
@@ -192,7 +192,7 @@ Now that you have a Queue binding configured, you need to set some request heade
 
 3. You will create 2 headers. 
     
-    For each, you will click **+ Request Header**, enter the header name, then the header value, and then click **Apply**.
+    For each, you will choose **+ Request Header**, enter the header name, then the header value, and then choose **Apply**.
 
     Create the following headers:
 
@@ -219,17 +219,17 @@ First, let's see all the objects that you've configured.
 
     ![RDP object](assets/rdp-objects.png)
 
-2. Navigate to the **REST Consumers** tab, and click the name of your REST consumer, for example, `SBPA_[SAPCommunityDisplayName]`.
+2. Navigate to the **REST Consumers** tab, and choose the name of your REST consumer, for example, `SBPA_[SAPCommunityDisplayName]`.
 
     ![Select REST consumer](assets/enable1.png)
 
-3. Click **Edit** on the top right.
+3. Choose the **Edit** button on the top right.
 
     ![Select REST consumer](assets/enable2.png)
 
     Enable the REST consumer by toggling the **Enabled** setting.
     
-    Click **Apply**.
+    Choose **Apply**.
 
     Now you are ready to enable our RDP.
 
@@ -237,11 +237,11 @@ First, let's see all the objects that you've configured.
 
     Select the **Summary** tab.
     
-5. Click on the **Connector / RDP**, for example, `EDP-SBPA-BPCreated-[SAPCommunityDisplayName]`.
+5. Choose the **Connector / RDP**, for example, `EDP-SBPA-BPCreated-[SAPCommunityDisplayName]`.
     
-    Click **Edit** on the top right, and enable the RDP by toggling the **Enabled** setting.
+    Choose **Edit** on the top right, and enable the RDP by toggling the **Enabled** setting.
     
-    Click the **Apply** button.
+    Choose the **Apply** button.
 
     Once you enable the RDP, if you navigate to the `Summary` tab, you should see that all the objects are in an operational state.
 

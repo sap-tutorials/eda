@@ -69,7 +69,7 @@ In AEM there is a concept of a **Topic Endpoint**. A topic endpoint is a durable
 
     ![Open queues](assets/queue1.png)
 
-2. On the right of the new tab, click **+ Queue**.
+2. On the right of the new tab, choose **+ Queue**.
    
     ![New queue](assets/queue2.png)
    
@@ -77,25 +77,25 @@ In AEM there is a concept of a **Topic Endpoint**. A topic endpoint is a durable
 
     ![Create queue](assets/create-queue.png)
 
-    Click **Create**.
+    Choose **Create**.
     
-3. Leave all the default settings, and click **Apply**. 
+3. Leave all the default settings, and choose **Apply**. 
 
     Your queue has no subscriptions at the moment, so let's go ahead and add a subscription to the Business Partner topic, for example, `default/sap.s4/S4D/ce/sap/s4/beh/businesspartner/v1/BusinessPartner/Created/v1`.
 
-4. Click on the queue you just created.
+4. Choose the queue you just created.
    
 5. Go to the **Subscriptions** tab.
     
     ![Open subscriptions](assets/queue3.png)
     
-    Click **+ Subscription** on the right side. 
+    Choose the **+ Subscription** button on the right side. 
     
     Enter the topic name, `default/sap.s4/S4D/ce/sap/s4/beh/businesspartner/v1/BusinessPartner/Created/v1`.
 
     ![Add subscription to queue](assets/queue-add-subscription.png)
 
-    Click **Create**.
+    Choose **Create**.
 
 
 ### Subscribe to a Queue
@@ -105,7 +105,7 @@ Now that you have created a queue, let's subscribe to it in the **Try Me!** page
 
     On the publisher side, you should still be signed in.
     
-2. Click **Connect** on the subscriber side. It should grab the credentials from the publisher side.
+2. Choose **Connect** on the subscriber side. It should grab the credentials from the publisher side.
 
     >If not, provide them again.
 
@@ -113,7 +113,7 @@ Now that you have created a queue, let's subscribe to it in the **Try Me!** page
 
     Enter the queue name in the text box.
 
-    Click **Start Consume**.
+    Choose **Start Consume**.
 
     ![Consume queue](assets/consume-queue.png)
 

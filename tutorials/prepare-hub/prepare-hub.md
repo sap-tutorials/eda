@@ -40,7 +40,7 @@ Among the artifacts provided by SAP products and that are described in the SAP B
 
 Let's start by exploring the **Events** section part of the SAP Business Accelerator Hub.
 
-👉 Navigate to the SAP Business Accelerator Hub, [https://hub.sap.com](https://hub.sap.com), click **Categories**, and select **Events**.
+👉 Navigate to the SAP Business Accelerator Hub, [https://hub.sap.com](https://hub.sap.com), choose **Categories**, and select **Events**.
 
 ![Navigate to Events category in the SAP Business Accelerator Hub](explore1.png)
 
@@ -50,7 +50,7 @@ This will list more than 350 events available.
 
 Let's group these events by SAP application and get familiar with the events produced by a particular SAP application.
 
-👉 Click the `Packages` tab, and select the [SAP Marketing Cloud Business Events](https://hub.sap.com/package/SAPMarketingCloudBusinessEvents/event)
+👉 Choose the `Packages` tab, and select the [SAP Marketing Cloud Business Events](https://hub.sap.com/package/SAPMarketingCloudBusinessEvents/event)
 
 ![Navigate to SAP Marketing Cloud Business Events](explore3.png)
 

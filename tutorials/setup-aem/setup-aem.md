@@ -26,12 +26,12 @@ In this tutorial, you will setup AEM, start interacting with it and you will get
 
 ### Create and access an instance of SAP Integration Suite, advanced event mesh
 
-1. Log in to your SAP BTP account and navigate to `Services` > `Instances and Subscription`. Click the `Create` button.
+1. Log in to your SAP BTP account and navigate to `Services` > `Instances and Subscription`. Choose the `Create` button.
 
     ![Create instance](./assets/btp-cockpit-create-instance.png)
 
 2. In the popup, select the service SAP Integration Suite, advanced event mesh and select the plan `standard`. 
-3. Once the instance is created, you can click on the instance name to access the AEM instance.
+3. Once the instance is created, you can choose the instance name to access the AEM instance.
 
     ![Create instance](./assets/btp-cockpit-access-instance.png)
 
@@ -73,7 +73,7 @@ Mission control is divided into two sections:
 
 In order to create an event broker service, follow the steps below:
 
-1. Click on the **Cluster Manager** and click the **Create Service** button.
+1. Choose the **Cluster Manager** and choose the **Create Service** button.
 
     ![Create service button](./assets/create-event-broker-service.png)
 
@@ -89,7 +89,7 @@ In order to create an event broker service, follow the steps below:
 
     ![Create event service broker details](./assets/create-broker-details.png)
 
-3. Click **Create Service** button and wait for the service to be created. This can take a couple of minutes.  
+3. Choose the **Create Service** button and wait for the service to be created. This can take a couple of minutes.  
 
 > For simplicity purposes you will refer to the event broker service as `AMER-USEast-Broker` in this tutorial. In this case, the name of the event broker service reflects the region where the broker is located but you can name it whatever you want.
 
