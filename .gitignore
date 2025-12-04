@@ -41,7 +41,7 @@ ehthumbs.db
 Thumbs.db
 
 .DS_Store
+.$*.*
 
-#  validation files  #
-######################
-rules.vr
+*.crt
+*.key
