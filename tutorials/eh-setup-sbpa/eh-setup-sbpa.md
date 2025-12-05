@@ -4,7 +4,7 @@ author_name: Antonio Maradiaga
 author_profile: https://github.com/ajmaradiaga
 auto_validation: true
 time: 30
-tags: [ tutorial>intermediate, software-product>sap-integration-suite, software-product>sap-business-technology-platform, tutorial>license]
+tags: [ tutorial>intermediate, software-product>sap-integration-suite, software-product>sap-business-technology-platform, tutorial>license ]
 primary_tag: software-product>sap-integration-suite
 ---
 
