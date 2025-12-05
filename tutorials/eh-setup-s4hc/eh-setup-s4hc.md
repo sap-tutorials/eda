@@ -57,7 +57,7 @@ Once we've approved the extension the extension status will change to enabling a
 
 Now that we have the SAP S/4HANA Cloud Public edition system registered in our SAP BTP global account, we can proceed to include it in a formation. The formation will need to be of type `Eventing between SAP cloud systems` to enable the event exchange.
 
-1. In the SAP BTP cockpit, navigate to the **Formations** section, choose the **Include Systems** button in the formation. 
+1. In the SAP BTP cockpit, navigate to the **Formations** section, choose the **Include Systems** button in the formation.
 
     ![Include systems in formation](assets/formation-include-systems.png)
 

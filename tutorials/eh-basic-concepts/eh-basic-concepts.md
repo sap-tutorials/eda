@@ -15,7 +15,7 @@ primary_tag: software-product>sap-integration-suite
 
 ## You will learn
 
-- Get familiar with the BTP Global account System Landscape and formations. 
+- Get familiar with the BTP Global account System Landscape and formations.
 - How we define an integration dependency between SAP cloud applications
 - How we enable eventing between SAP cloud applications using subscriptions in Event Hub
 
@@ -100,11 +100,10 @@ Let's explore some of the attributes available.
 | Name | Required | Description | Example |
 | ---- | ----- | ---- | --- |
 | id | ✅ | Identifies the event. Producers MUST ensure that source + id is unique for each distinct event. | QgEK7wzuHtqdhJwqCS+VOA== |
-| source | ✅ | Identifies the context in which an event happened. | https://github.com/cloudevents |
+| source | ✅ | Identifies the context in which an event happened. | <https://github.com/cloudevents> |
 | specversion | ✅ | The version of the CloudEvents specification which the event uses. | `1.0` |
 | type | ✅ | Describes the type of the event | `sap.s4.beh.businesspartner.v1.BusinessPartner.Created.v1` |
 | datacontenttype | | Content type of the value in data. | `application/json` |
-
 
 #### Extension context attributes
 
@@ -189,7 +188,7 @@ Three key aspects to highlight here are the `ID`, `Namespace` and the `Region`. 
 Before we can enable the exchange of events between SAP cloud applications, we need to create a formation in the BTP global account. A formation is a logical grouping of systems in the System Landscape. In this case, we are interested in the formation type called `Eventing Between SAP Cloud Systems`. This formation type allows SAP Cloud Application Event Hub to know which systems are allowed to exchange events.
 
 > Note: Not all systems registered in the System Landscape can produce or consume events via SAP Cloud Application Event Hub. We can see the applications supported in the [SAP Help documentation](https://help.sap.com/docs/sap-cloud-application-event-hub/sap-cloud-application-event-hub-service-guide/integration-use-cases) and also in the systems listed in the Formation Type.
-> 
+>
 > ![Eventing Between SAP Cloud Systems formation type](assets/formation-type.png)
 
 In order to enable eventing between SAP cloud systems, we need to create an `Eventing Between SAP Cloud Systems` formation. A formation of this type needs to include an instance of SAP Cloud Application Event Hub and then we can add systems as needed.

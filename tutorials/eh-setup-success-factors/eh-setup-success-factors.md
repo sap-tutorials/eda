@@ -45,7 +45,7 @@ Depending on how your SAP BTP global account is setup, an SAP SuccessFactors sys
 
 Now that we have the SAP SuccessFactors system registered in our SAP BTP global account, we can proceed to include it in a formation. The formation will need to be of type `Eventing between SAP cloud systems` to enable the event exchange.
 
-1. In the SAP BTP cockpit, navigate to the **Formations** section, choose the **Include Systems** button in the formation. 
+1. In the SAP BTP cockpit, navigate to the **Formations** section, choose the **Include Systems** button in the formation.
 
     ![Include systems in formation](assets/formation-include-systems.png)
 
@@ -58,7 +58,7 @@ Once the formation finishes synchronizing, the SAP SuccessFactors system will be
 ![alt text](assets/formation-synchronised.png)
 
 > For SAP SuccessFactors Employee Central events, we have to enable the following configurations:
-> 
+>
 > 1. Complete the steps described in the [Employee Central HRIS Events topic](https://help.sap.com/docs/successfactors-platform/using-sap-successfactors-events-on-sap-cloud-application-event-hub/a47ba97c9c30449bb8655a959e06b512.html?locale=en-US&state=PRODUCTION&version=2511).
 > 2. Enable **Integrating Employee Central Group Events with SAP Cloud Application Event Hub** in **Upgrade Center**.
 

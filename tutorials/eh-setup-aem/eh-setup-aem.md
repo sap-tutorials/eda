@@ -80,7 +80,7 @@ These AEM instance details will be required when creating the SAP Cloud Applicat
 
 ### Get AEM event broker details
 
-Apart from the AEM instance details that we can find in the SAP BTP cockpit, we also need to gather the event broker details from AEM. For this, we need to access the AEM 
+Apart from the AEM instance details that we can find in the SAP BTP cockpit, we also need to gather the event broker details from AEM. For this, we need to access the AEM:
 
 1. Navigate to the SAP BTP subaccount where the SAP Integration Suite, advanced event mesh instance lives. Go to **Services** > **Instances and Subscriptions** and click on the `SAP Integration Suite, advanced event mesh` instance.
 2. In the AEM UI, go to **Cluster Manager** and select the event broker service that will be receiving the events from SAP Cloud Application Event Hub.
@@ -190,7 +190,6 @@ The formation will need to be of type `Eventing between SAP cloud systems` to en
 
 2. In the pop-up, select the AEM system. Then, choose the **Next Steps** button.
 
-
 Once the formation finishes synchronizing, the SAP Integration Suite, advanced event mesh system will be part of the formation and we will be able to configure integration dependencies so that events start flowing to SAP Build Process Automation.
 
 ![Formation synchronised](assets/formation-synchronised.png)
@@ -243,4 +242,4 @@ To validate the connectivity between SAP Cloud Application Event Hub and SAP Int
 ### Further study
 
 - SAP Help documentation on setting up [SAP Integration Suite, Advanced Event Mesh as a Consumer](https://help.sap.com/docs/sap-cloud-application-event-hub/sap-cloud-application-event-hub-service-guide/sap-integration-suite-advanced-event-mesh-as-consumer) in SAP Cloud Application Event Hub.
-- [Get started with SAP Integration Suite, advanced event mesh](https://developers.sap.com/mission.advanced-event-mesh-get-started.html) tutorial
+- [Get started with SAP Integration Suite, advanced event mesh](https://developers.sap.com/mission.advanced-event-mesh-get-started.html) tutorial.

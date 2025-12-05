@@ -34,7 +34,7 @@ In this tutorial, we will setup SAP Cloud Application Event Hub, and access its 
 
     ![Create instance](./assets/btp-cockpit-create-instance.png)
 
-2. In the popup, select the service `SAP Cloud Application Event Hub` and select the plan `standard`. 
+2. In the popup, select the service `SAP Cloud Application Event Hub` and select the plan `standard`.
 
     ![alt text](assets/eh-new-instance-plan.png)
 
