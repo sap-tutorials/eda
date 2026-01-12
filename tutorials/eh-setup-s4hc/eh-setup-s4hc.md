@@ -15,7 +15,7 @@ primary_tag: software-product>sap-s-4hana-cloud
 ## Prerequisites
 
 - You have access to an SAP S/4HANA Cloud Public edition system and an instance of SAP Cloud Application Event Hub in your SAP BTP account.
-- You've completed the previous tutorial: [Set up SAP Cloud Application Event Hub](../eh-setup-event-hub/eh-setup-event-hub.md).
+- You've completed the previous tutorial: [Set up SAP Cloud Application Event Hub](eh-setup-event-hub).
 
 ## You will learn
 

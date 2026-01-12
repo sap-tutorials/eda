@@ -15,7 +15,7 @@ primary_tag: software-product>sap-integration-suite
 
 ## Prerequisites
 - You have access to an SAP S/4HANA Cloud system and an SAP Integration Suite, advanced event mesh tenant
-- You've completed the previous tutorial: [Set up SAP S/4HANA Cloud connectivity with SAP Integration Suite, advanced event mesh](../setup-s4hc-aem/setup-s4hc-aem.md) or have the connectivity between SAP S/4HANA Cloud and SAP Integration Suite, advanced event mesh configured.
+- You've completed the previous tutorial: [Set up SAP S/4HANA Cloud connectivity with SAP Integration Suite, advanced event mesh](setup-s4hc-aem) or have the connectivity between SAP S/4HANA Cloud and SAP Integration Suite, advanced event mesh configured.
 
 ## You will learn
 - How to configure outbound events in SAP S/4HANA Cloud

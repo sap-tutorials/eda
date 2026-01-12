@@ -15,7 +15,7 @@ primary_tag: software-product>sap-successfactors-hcm-suite
 ## Prerequisites
 
 - You have access to an SAP SuccessFactors system and an instance of SAP Cloud Application Event Hub in your SAP BTP account.
-- You've completed the previous tutorial: [Set up SAP Cloud Application Event Hub](../eh-setup-event-hub/eh-setup-event-hub.md).
+- You've completed the previous tutorial: [Set up SAP Cloud Application Event Hub](eh-setup-event-hub).
 
 ## You will learn
 
