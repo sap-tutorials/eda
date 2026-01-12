@@ -14,8 +14,8 @@ primary_tag: software-product>sap-integration-suite
 
 ## Prerequisites
 
-- You've completed the previous tutorial: [Set up SAP Cloud Application Event Hub](../eh-setup-event-hub/eh-setup-event-hub.md).
-- You are familiar with the concepts explained in the [SAP Cloud Application Event Hub - Basic Concepts](eh-basic-concepts.md) tutorial.
+- You've completed the previous tutorial: [Set up SAP Cloud Application Event Hub](eh-setup-event-hub).
+- You are familiar with the concepts explained in the [SAP Cloud Application Event Hub - Basic Concepts](eh-basic-concepts) tutorial.
 - The publisher system is already configured in your system landscape and it is part of the formation used to enable eventing between SAP cloud systems.
 - You have access to an SAP Integration Suite, advanced event mesh (AEM) instance and an instance of SAP Cloud Application Event Hub in your SAP BTP account.
 
