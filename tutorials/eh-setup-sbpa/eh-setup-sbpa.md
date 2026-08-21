@@ -61,7 +61,7 @@ In order to get events flowing from SAP S/4HANA Cloud to SAP Build Process Autom
    3. `Publishing System Namespace`: The namespace of the system that will be producing the events. We can find the namespace of a system by navigating to the System Landscape, selecting the system, and then going to the Details tab.
    4. `Event Types`: The types of events that the consuming system is interested in.
 
-    ![Integration dependency details](assets/integration-dependency-details.png)
+   ![Integration dependency details](assets/integration-dependency-details.png)
 
 3. Once we've defined all the event types that the consuming system is interested in, we can choose the **Review** button and then choose **Add** to save the integration dependency.
 

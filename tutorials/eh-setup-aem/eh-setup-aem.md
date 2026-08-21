@@ -35,24 +35,24 @@ To secure the communication between SAP Cloud Application Event Hub and AEM, we 
 
 1. Download the script and open it in a text editor.
 
-    ```bash
-    #!/bin/bash    
-    # The script below works on a Mac with OpenSSL installed
-    #
-    # Replace the value of CERT_NAME with the subaccount subdomain.
-    # You can find this value by navigation to the subaccount > Overview page.
-    # In the General section there is a field called Subdomain
-    CERT_NAME="my-subaccount-plw8f86u"
+   ```bash
+   #!/bin/bash    
+   # The script below works on a Mac with OpenSSL installed
+   #
+   # Replace the value of CERT_NAME with the subaccount subdomain.
+   # You can find this value by navigation to the subaccount > Overview page.
+   # In the General section there is a field called Subdomain
+   CERT_NAME="my-subaccount-plw8f86u"
 
-    openssl req -x509 -out ${CERT_NAME}.crt -keyout ${CERT_NAME}.key \
-    -newkey rsa:2048 -nodes -sha256 \
-    -subj "/CN=${CERT_NAME}" -extensions EXT -config <( \
-    printf "[dn]\nCN=${CERT_NAME}\n[req]\ndistinguished_name = dn\n[EXT]\nsubjectAltName=DNS:${CERT_NAME}\nkeyUsage=digitalSignature\nextendedKeyUsage=serverAuth")
+   openssl req -x509 -out ${CERT_NAME}.crt -keyout ${CERT_NAME}.key \
+   -newkey rsa:2048 -nodes -sha256 \
+   -subj "/CN=${CERT_NAME}" -extensions EXT -config <( \
+   printf "[dn]\nCN=${CERT_NAME}\n[req]\ndistinguished_name = dn\n[EXT]\nsubjectAltName=DNS:${CERT_NAME}\nkeyUsage=digitalSignature\nextendedKeyUsage=serverAuth")
 
-    awk 'NF {sub(/\r/, ""); printf "%s\\n",$0;}'  ${CERT_NAME}.crt > ${CERT_NAME}-single-line.crt
+   awk 'NF {sub(/\r/, ""); printf "%s\\n",$0;}'  ${CERT_NAME}.crt > ${CERT_NAME}-single-line.crt
 
-    awk 'NF {sub(/\r/, ""); printf "%s\\n",$0;}'  ${CERT_NAME}.key > ${CERT_NAME}-single-line.key
-    ```
+   awk 'NF {sub(/\r/, ""); printf "%s\\n",$0;}'  ${CERT_NAME}.key > ${CERT_NAME}-single-line.key
+   ```
 
 2. Replace the value of the `CERT_NAME` variable with the subaccount subdomain where the SAP Cloud Application Event Hub instance is located. You can find this value by navigation to the SAP BTP subaccount > **Overview** page. In the **General** section there is a field called `Subdomain`.
 
@@ -144,14 +144,14 @@ To configure the connectivity between SAP Cloud Application Event Hub and SAP In
 
 3. In the parameters section, provide the following payload, replacing the values of `webhookUrl` and `systemId` with the values gathered in the previous steps.
 
-    ```json
-    {
+   ```json
+   {
 
-    "systemNamespace": "sap.aem",
-    "webhookUrl": "https://mr-connection-yj7whkyb4f5.messaging.solace.cloud:9443",
-    "systemId":"6820ed1a-b18c-5fb4-hb88-231b0b1a7687"
-    }
-    ```
+   "systemNamespace": "sap.aem",
+   "webhookUrl": "https://mr-connection-yj7whkyb4f5.messaging.solace.cloud:9443",
+   "systemId":"6820ed1a-b18c-5fb4-hb88-231b0b1a7687"
+   }
+   ```
 
     ![Event Hub AEM instance parameters](assets/eh-aem-connectivity-instance-parameters.png)
 
@@ -213,7 +213,7 @@ To validate the connectivity between SAP Cloud Application Event Hub and SAP Int
    3. `Publishing System Namespace`: The namespace of the system that will be producing the events. We can find the namespace of a system by navigating to the System Landscape, selecting the system, and then going to the Details tab.
    4. `Event Types`: The types of events that the consuming system is interested in.
 
-    ![Example integration dependency details](assets/sf-aem-dependency.png)
+   ![Example integration dependency details](assets/sf-aem-dependency.png)
 
 3. Once we've defined all the event types that the consuming system is interested in, we can choose the **Review** button and then choose **Add** to save the integration dependency.
 
